@@ -10,6 +10,8 @@ import {
   BTN_FOREST,
   BTN_FIRE,
   BTN_RAIN,
+  BTN_DARK,
+  BTN_LIGHT,
   minutesDisplay,
   secondsDisplay
 } from "./elements.js"
@@ -48,6 +50,18 @@ BTN_DECREASE.addEventListener('click', function () {
   timer.decreaseMinutes();
   sound.pressButton();
 });
+
+BTN_LIGHT.addEventListener('click', function() {
+  console.log('chegou o light')
+  BTN_DARK.classList.remove('hide');
+  BTN_LIGHT.classList.add('hide');
+})
+
+BTN_DARK.addEventListener('click', function() {
+  BTN_DARK.classList.add('hide');
+  BTN_LIGHT.classList.remove('hide');
+  console.log('chegou o dark')
+})
 
 BTN_FOREST.addEventListener('click', function () {
   controls.showSelectedBtn(BTN_FOREST, sound.FOREST_AUDIO);
