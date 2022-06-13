@@ -85,7 +85,7 @@ BTN_FIRE.addEventListener('click', function () {
 })
 
 BTN_COFFEE_SHOP.addEventListener('click', function () {
-  controls.showSelectedBtn(BTN_COFFEE_SHOP, sound.FIRE_AUDIO);
+  controls.showSelectedBtn(BTN_COFFEE_SHOP, sound.COFFEE_SHOP_AUDIO);
   controls.showUnselectedBtns(BTN_FIRE, BTN_RAIN, BTN_FOREST);
   controls.muteUnselectedSongs(sound.FOREST_AUDIO, sound.FIRE_AUDIO, sound.RAIN_AUDIO);
 })

@@ -18,15 +18,6 @@
   box-sizing: border-box;
 }
 
-.change-mode {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.change-mode button {
-  margin: 6.4rem 6.4rem 0 0;
-}
-
 .darkmode .change-mode button {
   margin: 6.0rem 6.0rem 0 0;
 }
@@ -56,6 +47,15 @@
 
 .darkmode .btn-selected {
   background-color: var(--darkmode-bg-card-selected);
+}
+
+.change-mode {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.change-mode button {
+  margin: 6.4rem 6.4rem 0 0;
 }
 
 
