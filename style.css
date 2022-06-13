@@ -1,9 +1,15 @@
 :root {
   font-size: 62.5%;
   --primary-color: hsl(240, 6%, 21%);
-  --bg-primary-color: hsl(240, 9%, 89%);
-  --bg-selected-color: hsl(194, 97%, 31%);
-  --selected-color: hsl(0, 0%, 100%);
+  --bg-card-color: hsl(240, 9%, 89%);
+  --bg-card-selected: hsl(194, 97%, 31%);
+  --white-color: hsl(0, 0%, 100%);
+
+  --darkmode-bg-color:hsl(240, 5%, 7%);
+  --darkmode-bg-card: hsl(240, 6%, 17%);
+  --darkmode-bg-card-selected: hsl(195, 74%, 15%);
+  --darkmode-secondary-color: hsl(240, 7%, 78%);
+  
 }
 
 * {
@@ -21,9 +27,31 @@
   margin: 6.0rem 6.0rem 0 0;
 } 
 
+.darkmode,
+.darkmode main {
+  background-color: var(--darkmode-bg-color);
+  color: var(--white-color);
+}
+
+.darkmode .sound-controls,
+.darkmode .sound-controls path,
+.darkmode .controls path {
+  background-color: var(--darkmode-bg-card);
+  fill: var(--darkmode-secondary-color);
+}
+
+.darkmode .volume,
+.darkmode .volume::-webkit-slider-thumb {
+  background-color: var(--white-color);
+}
+
+.darkmode .btn-selected {
+  background-color: var(--darkmode-bg-card-selected);
+}
+
 
 #light-mode svg path {
-  fill: var(--selected-color)
+  fill: var(--white-color)
 }
 
 #dark-mode svg path {
@@ -69,7 +97,7 @@ button {
 
 .sound-controls,
 .sound-controls path {
-  background-color: var(--bg-primary-color);
+  background-color: var(--bg-card-color);
   fill: var(--primary-color);
 
   height: 15.2rem;
@@ -82,8 +110,8 @@ button {
 
 .btn-selected,
 .btn-selected path {
-  background-color: var(--bg-selected-color);
-  fill: var(--selected-color);
+  background-color: var(--bg-card-selected);
+  fill: var(--white-color);
 
   height: 15.2rem;
   width: 13.8rem;
@@ -97,13 +125,13 @@ button {
   width: 9.0rem;
   height: 4px;
   appearance: none;
-  background-color: var(--selected-color);
+  background-color: var(--white-color);
 
   border-radius: 5px;
 }
 
 .btn-selected input::-webkit-slider-thumb {
-  background-color: var(--selected-color);
+  background-color: var(--white-color);
 }
 
 button:hover {

@@ -12,6 +12,7 @@ import {
   BTN_RAIN,
   BTN_DARK,
   BTN_LIGHT,
+  BODY,
   minutesDisplay,
   secondsDisplay
 } from "./elements.js"
@@ -55,12 +56,14 @@ BTN_LIGHT.addEventListener('click', function() {
   console.log('chegou o light')
   BTN_DARK.classList.remove('hide');
   BTN_LIGHT.classList.add('hide');
+  BODY.classList.remove('darkmode');
 })
 
 BTN_DARK.addEventListener('click', function() {
   BTN_DARK.classList.add('hide');
   BTN_LIGHT.classList.remove('hide');
-  console.log('chegou o dark')
+  BODY.classList.add('darkmode');
+  console.log('chegou o dark');
 })
 
 BTN_FOREST.addEventListener('click', function () {
