@@ -12,7 +12,25 @@
   box-sizing: border-box;
 }
 
-body {
+.change-mode {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.change-mode button {
+  margin: 6.0rem 6.0rem 0 0;
+} 
+
+
+#light-mode svg path {
+  fill: var(--selected-color)
+}
+
+#dark-mode svg path {
+  fill: var(--primary-color)
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,15 +48,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 25.4rem 0;
+  margin: 9.2rem 0;
 }
 
 .right-side {
-  margin: 19.6rem 0;
+  margin: 9.2rem 0;
   display: grid;
   grid-template-columns: 13.8rem 13.8rem;
   gap: 3.2rem;
-}
+} 
 
 .timer-display {
   display: flex;
@@ -59,6 +77,7 @@ button {
   border-radius: 2.4rem;
 
   transition: transform 200ms;
+  position: relative;
 }
 
 .btn-selected,
@@ -73,6 +92,20 @@ button {
   transition: transform 200ms;
 }
 
+.btn-selected input {
+  margin-top: 3.2rem;
+  width: 9.0rem;
+  height: 4px;
+  appearance: none;
+  background-color: var(--selected-color);
+
+  border-radius: 5px;
+}
+
+.btn-selected input::-webkit-slider-thumb {
+  background-color: var(--selected-color);
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -80,6 +113,25 @@ button:hover {
 .sound-controls:hover,
 .btn-selected:hover {
   transform: scale(1.1)
+}
+
+.volume {
+  margin-top: 3.2rem;
+  width: 9.0rem;
+  height: 4px;
+  appearance: none;
+  background-color: var(--primary-color);
+
+  border-radius: 5px;
+
+}
+
+.volume::-webkit-slider-thumb {
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
 }
 
 .hide {
