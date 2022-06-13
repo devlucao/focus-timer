@@ -24,14 +24,23 @@
 }
 
 .change-mode button {
+  margin: 6.4rem 6.4rem 0 0;
+}
+
+.darkmode .change-mode button {
   margin: 6.0rem 6.0rem 0 0;
-} 
+}
 
 .darkmode,
 .darkmode main {
   background-color: var(--darkmode-bg-color);
   color: var(--white-color);
 }
+
+ .darkmode .left-side,
+ .darkmode .right-side {
+  margin: 9.2rem 0;
+ }
 
 .darkmode .sound-controls,
 .darkmode .sound-controls path,
@@ -76,11 +85,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 9.2rem 0;
+  margin: 9.6rem 0;
 }
 
 .right-side {
-  margin: 9.2rem 0;
+  margin: 9.6rem 0;
   display: grid;
   grid-template-columns: 13.8rem 13.8rem;
   gap: 3.2rem;
