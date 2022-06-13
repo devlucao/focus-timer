@@ -1,0 +1,87 @@
+:root {
+  font-size: 62.5%;
+  --primary-color: hsl(240, 6%, 21%);
+  --bg-primary-color: hsl(240, 9%, 89%);
+  --bg-selected-color: hsl(194, 97%, 31%);
+  --selected-color: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19.2rem;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 50rem;
+  font-size: 12.617rem;
+  line-height: 14.785rem;
+
+  color: var(--primary-color);
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25.4rem 0;
+}
+
+.right-side {
+  margin: 19.6rem 0;
+  display: grid;
+  grid-template-columns: 13.8rem 13.8rem;
+  gap: 3.2rem;
+}
+
+.timer-display {
+  display: flex;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+.sound-controls,
+.sound-controls path {
+  background-color: var(--bg-primary-color);
+  fill: var(--primary-color);
+
+  height: 15.2rem;
+  width: 13.8rem;
+  border-radius: 2.4rem;
+
+  transition: transform 200ms;
+}
+
+.btn-selected,
+.btn-selected path {
+  background-color: var(--bg-selected-color);
+  fill: var(--selected-color);
+
+  height: 15.2rem;
+  width: 13.8rem;
+  border-radius: 2.4rem;
+
+  transition: transform 200ms;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.sound-controls:hover,
+.btn-selected:hover {
+  transform: scale(1.1)
+}
+
+.hide {
+  display: none;
+}
