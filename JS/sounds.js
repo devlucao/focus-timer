@@ -4,10 +4,10 @@ const buttonPressAudio = new Audio("https://github.com/maykbrito/automatic-video
 const kitchenTimer = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true");
 const bgAudio = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/bg-audio.mp3?raw=true")
 
-const FOREST_AUDIO = new Audio("https://drive.google.com/u/0/uc?id=1CRHkV72WUMdcqec5GT_KdsqFz0z3VAOA&export=download");
-const RAIN_AUDIO = new Audio("https://drive.google.com/file/d/1Ip8xBqAUJ-bty51Wz8JBtX_bWXCgA0P2/view");
-const FIRE_AUDIO = new Audio("https://drive.google.com/file/d/1MakaBPxJvTa_whaSM3kEbRcxiVd1GRCB/view");
-const COFFEE_SHOP_AUDIO = new Audio("https://drive.google.com/file/d/1OxLKpCwg2wrxXFNUHgZxJ51QEt0ac5RA/view");
+const FOREST_AUDIO = new Audio('./Audios/Floresta.wav');
+const RAIN_AUDIO = new Audio('./Audios/Chuva.wav');
+const FIRE_AUDIO = new Audio('./Audios/Lareira.wav');
+const COFFEE_SHOP_AUDIO = new Audio('./Audios/Cafeteria.wav');
 
 function pressButton() {
   buttonPressAudio.play();

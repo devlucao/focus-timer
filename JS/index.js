@@ -52,11 +52,11 @@ BTN_DECREASE.addEventListener('click', function () {
 BTN_FOREST.addEventListener('click', function () {
   controls.showSelectedBtn(BTN_FOREST, sound.FOREST_AUDIO);
   controls.showUnselectedBtns(BTN_COFFEE_SHOP, BTN_FIRE, BTN_RAIN);
-  controls.muteUnselectedSongs(sound.bgAudio, sound.FIRE_AUDIO, sound.COFFEE_SHOP_AUDIO);
+  controls.muteUnselectedSongs(sound.RAIN_AUDIO, sound.FIRE_AUDIO, sound.COFFEE_SHOP_AUDIO);
 })
 
 BTN_RAIN.addEventListener('click', function () {
-  controls.showSelectedBtn(BTN_RAIN, sound.bgAudio);
+  controls.showSelectedBtn(BTN_RAIN, sound.RAIN_AUDIO);
   controls.showUnselectedBtns(BTN_COFFEE_SHOP, BTN_FIRE, BTN_FOREST);
   controls.muteUnselectedSongs(sound.FOREST_AUDIO, sound.FIRE_AUDIO, sound.COFFEE_SHOP_AUDIO);
 })
@@ -68,7 +68,7 @@ BTN_FIRE.addEventListener('click', function () {
 })
 
 BTN_COFFEE_SHOP.addEventListener('click', function () {
-  controls.showSelectedBtn(BTN_COFFEE_SHOP, sound.FIRE_AUDIO);
+  controls.showSelectedBtn(BTN_COFFEE_SHOP, sound.COFFEE_SHOP_AUDIO);
   controls.showUnselectedBtns(BTN_FIRE, BTN_RAIN, BTN_FOREST);
   controls.muteUnselectedSongs(sound.FOREST_AUDIO, sound.FIRE_AUDIO, sound.RAIN_AUDIO);
 })
