@@ -8,6 +8,10 @@ const BTN_RAIN = document.querySelector('#rain');
 const BTN_FIRE = document.querySelector('#fire');
 const BTN_COFFEE_SHOP = document.querySelector('#coffee-shop');
 
+const BTN_LIGHT = document.querySelector('#light-mode');
+const BTN_DARK = document.querySelector('#dark-mode');
+const BODY = document.querySelector('#body');
+
 let minutesDisplay = document.querySelector('#minutes');
 let secondsDisplay = document.querySelector('#seconds');
 
@@ -20,6 +24,9 @@ export {
   BTN_FOREST,
   BTN_FIRE,
   BTN_RAIN,
+  BTN_DARK,
+  BTN_LIGHT,
+  BODY,
   minutesDisplay,
   secondsDisplay,
 }

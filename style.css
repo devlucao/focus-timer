@@ -1,9 +1,15 @@
 :root {
   font-size: 62.5%;
   --primary-color: hsl(240, 6%, 21%);
-  --bg-primary-color: hsl(240, 9%, 89%);
-  --bg-selected-color: hsl(194, 97%, 31%);
-  --selected-color: hsl(0, 0%, 100%);
+  --bg-card-color: hsl(240, 9%, 89%);
+  --bg-card-selected: hsl(194, 97%, 31%);
+  --white-color: hsl(0, 0%, 100%);
+
+  --darkmode-bg-color:hsl(240, 5%, 7%);
+  --darkmode-bg-card: hsl(240, 6%, 17%);
+  --darkmode-bg-card-selected: hsl(195, 74%, 15%);
+  --darkmode-secondary-color: hsl(240, 7%, 78%);
+  
 }
 
 * {
@@ -12,7 +18,56 @@
   box-sizing: border-box;
 }
 
-body {
+.darkmode .change-mode button {
+  margin: 6.0rem 6.0rem 0 0;
+}
+
+.darkmode,
+.darkmode main {
+  background-color: var(--darkmode-bg-color);
+  color: var(--white-color);
+}
+
+ .darkmode .left-side,
+ .darkmode .right-side {
+  margin: 9.2rem 0;
+ }
+
+.darkmode .sound-controls,
+.darkmode .sound-controls path,
+.darkmode .controls path {
+  background-color: var(--darkmode-bg-card);
+  fill: var(--darkmode-secondary-color);
+}
+
+.darkmode .volume,
+.darkmode .volume::-webkit-slider-thumb {
+  background-color: var(--white-color);
+}
+
+.darkmode .btn-selected {
+  background-color: var(--darkmode-bg-card-selected);
+}
+
+.change-mode {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.change-mode button {
+  margin: 6.4rem 6.4rem 0 0;
+}
+
+
+#light-mode svg path {
+  fill: var(--white-color)
+}
+
+#dark-mode svg path {
+  fill: var(--primary-color)
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,15 +85,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 25.4rem 0;
+  margin: 9.6rem 0;
 }
 
 .right-side {
-  margin: 19.6rem 0;
+  margin: 9.6rem 0;
   display: grid;
   grid-template-columns: 13.8rem 13.8rem;
   gap: 3.2rem;
-}
+} 
 
 .timer-display {
   display: flex;
@@ -51,8 +106,21 @@ button {
 
 .sound-controls,
 .sound-controls path {
-  background-color: var(--bg-primary-color);
+  background-color: var(--bg-card-color);
   fill: var(--primary-color);
+
+  height: 15.2rem;
+  width: 13.8rem;
+  border-radius: 2.4rem;
+
+  transition: transform 200ms;
+  position: relative;
+}
+
+.btn-selected,
+.btn-selected path {
+  background-color: var(--bg-card-selected);
+  fill: var(--white-color);
 
   height: 15.2rem;
   width: 13.8rem;
@@ -61,16 +129,18 @@ button {
   transition: transform 200ms;
 }
 
-.btn-selected,
-.btn-selected path {
-  background-color: var(--bg-selected-color);
-  fill: var(--selected-color);
+.btn-selected input {
+  margin-top: 3.2rem;
+  width: 9.0rem;
+  height: 4px;
+  appearance: none;
+  background-color: var(--white-color);
 
-  height: 15.2rem;
-  width: 13.8rem;
-  border-radius: 2.4rem;
+  border-radius: 5px;
+}
 
-  transition: transform 200ms;
+.btn-selected input::-webkit-slider-thumb {
+  background-color: var(--white-color);
 }
 
 button:hover {
@@ -80,6 +150,25 @@ button:hover {
 .sound-controls:hover,
 .btn-selected:hover {
   transform: scale(1.1)
+}
+
+.volume {
+  margin-top: 3.2rem;
+  width: 9.0rem;
+  height: 4px;
+  appearance: none;
+  background-color: var(--primary-color);
+
+  border-radius: 5px;
+
+}
+
+.volume::-webkit-slider-thumb {
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
 }
 
 .hide {
