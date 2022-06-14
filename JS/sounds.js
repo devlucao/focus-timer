@@ -1,3 +1,5 @@
+import { BTN_VOLUME } from "./elements.js";
+
 export default function Sounds() {
 
 const buttonPressAudio = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true");

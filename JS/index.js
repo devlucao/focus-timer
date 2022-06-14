@@ -12,6 +12,7 @@ import {
   BTN_RAIN,
   BTN_DARK,
   BTN_LIGHT,
+  BTN_VOLUME,
   BODY,
   minutesDisplay,
   secondsDisplay
@@ -53,7 +54,6 @@ BTN_DECREASE.addEventListener('click', function () {
 });
 
 BTN_LIGHT.addEventListener('click', function() {
-  console.log('chegou o light')
   BTN_DARK.classList.remove('hide');
   BTN_LIGHT.classList.add('hide');
   BODY.classList.remove('darkmode');
@@ -63,7 +63,6 @@ BTN_DARK.addEventListener('click', function() {
   BTN_DARK.classList.add('hide');
   BTN_LIGHT.classList.remove('hide');
   BODY.classList.add('darkmode');
-  console.log('chegou o dark');
 })
 
 BTN_FOREST.addEventListener('click', function () {
