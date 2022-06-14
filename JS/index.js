@@ -12,7 +12,6 @@ import {
   BTN_RAIN,
   BTN_DARK,
   BTN_LIGHT,
-  BTN_VOLUME,
   BODY,
   minutesDisplay,
   secondsDisplay

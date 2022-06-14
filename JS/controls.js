@@ -1,5 +1,4 @@
 import Sounds from "./sounds.js";
-import { BTN_VOLUME } from "./elements.js";
 
 const sound = Sounds();
 
@@ -15,7 +14,7 @@ function showSelectedBtn(selectedBtn, selectedAudio) {
   selectedAudio.loop = true;
 
   function volumeControl() {
-    selectedAudio.volume = BTN_VOLUME.value / 100;
+    selectedAudio.volume = selectedBtn.querySelector('input').value / 100;
   }
   volumeControl();
 }
