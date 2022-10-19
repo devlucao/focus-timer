@@ -1,5 +1,5 @@
-# Desafio-N5
+# Focus Timer
 
-Desafio do Curso Explorer.
+Desafio do Curso Explorer da Rocketseat.
 
 Timer criado com HTML, CSS e Javascript utilizando recursos da DOM.
