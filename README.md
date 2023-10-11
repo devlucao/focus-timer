@@ -1,17 +1,17 @@
 # Focus Timer
 
-Desafio do Curso Explorer da Rocketseat.
+## Rocketseat Explorer Course Challenge.
 
-Timer criado com HTML, CSS e Javascript utilizando recursos da DOM.
+### Timer created with HTML, CSS and Javascript using DOM resources.
 
-Neste desafio foi desenvolvido um timer com as funções: Start, Stop, Adicionar 5 minutos e Diminuir 5 minutos.
+In this challenge, a timer was developed with the functions: Start, Stop, Add 5 minutes and Decrease 5 minutes.
 
-file:///home/lucao/Imagens/Capturas%20de%20tela/Captura%20de%20tela%20de%202023-10-11%2017-05-55.png
+![image](https://github.com/devlucao/focus-timer/assets/85628855/2d8dca24-7e23-4bca-848d-c94549686232)
 
-Também foi adicionada a funcionalidade de alterar o tema para o Dark Mode.
+The functionality to change the theme to Dark Mode has also been added.
 
-file:///home/lucao/Imagens/Capturas%20de%20tela/Captura%20de%20tela%20de%202023-10-11%2017-06-03.png
+![image](https://github.com/devlucao/focus-timer/assets/85628855/13c505f8-e9af-45ce-947e-c90ede9d14f8)
 
-Caso seja selecionado um dos ícones ao lado do timer, incia-se uma música, podendo ser som de floresta, chuva, cafeteria ou fogueira.
+If one of the icons next to the timer is selected, music starts, which can be the sound of the forest, rain, coffee shop or campfire.
 
 
